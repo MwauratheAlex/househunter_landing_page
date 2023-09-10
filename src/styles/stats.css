@@ -1,0 +1,60 @@
+.stats {
+  display: grid;
+  /* flex-direction: column; */
+  grid-template-rows: repeat(2, auto);
+  border: 1px solid red;
+  padding-top: 50px;
+}
+
+.stats .top-section {
+  display: flex;
+  border: 1px solid red;
+}
+
+.stats .top-section .left {
+  width: 100%;
+  background: url("assets/tower.png");
+  position: relative;
+  height: 600px;
+  border: 1px solid red;
+  /* padding: ; */
+}
+
+.stats .top-section .left .img {
+  position: absolute;
+  top: -13%;
+  right: -24%;
+  z-index: -10;
+  width: 100%;
+  height: auto;
+}
+
+.stats-content {
+  /* position: relative; */
+  display: block;
+  /* margin-top: 90px; */
+  border: 1px solid red;
+  width: 30%;
+}
+
+.stats .bottom-section {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid red;
+  padding: 0 2em;
+}
+
+.stats .bottom-section h1 {
+  margin: 0;
+  color: #000;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.stats .bottom-section p {
+  margin: 0;
+  color: #7b8087;
+  font-size: 1.125rem;
+  font-weight: 500;
+}

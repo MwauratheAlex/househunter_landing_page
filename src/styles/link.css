@@ -1,0 +1,24 @@
+.link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.link .arrow-icon {
+  width: 24px;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.link:hover .arrow-icon {
+  width: 30px;
+}
+
+.link {
+  color: #0689ff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  position: relative;
+  line-height: 3rem;
+  cursor: pointer;
+}

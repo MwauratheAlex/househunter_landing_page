@@ -1,0 +1,73 @@
+.howItWorks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4.9375rem 0;
+  margin: 0 auto;
+}
+
+.howItWorks h2 {
+  margin: 0;
+  margin-bottom: 1.25rem;
+  padding: 0;
+  color: #000339;
+  font-size: 2.1875rem;
+  font-weight: 600;
+  line-height: 100%;
+  position: relative;
+}
+
+.howItWorks h2::before {
+  content: "";
+  position: absolute;
+  width: 15%;
+  left: 42.5%;
+  top: -15px;
+  height: 4px;
+  background: #000339;
+  border-radius: 4px;
+}
+
+.howItWorks p {
+  color: #5a6473;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 187.5%;
+  margin: 0;
+  margin-bottom: 4.375rem;
+}
+
+.cards {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 8.75rem;
+  margin-bottom: 3.125rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card h1 {
+  color: #3b3c45;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 110%;
+  margin: 1.625rem 0 0.625rem 0;
+}
+
+.howItWorks .btn {
+  background: #0f1b4c;
+  border-radius: 12px;
+  color: #ededed;
+  padding: 1rem 2rem;
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
