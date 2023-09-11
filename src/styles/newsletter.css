@@ -1,0 +1,50 @@
+.newsletter {
+  display: flex;
+  align-items: end;
+  position: relative;
+}
+.newsletter .newsletter-content {
+  width: 100%;
+  border-radius: 20px;
+  padding: 8em 4em;
+  background: #063183;
+
+  margin-top: 6.25em;
+}
+
+.newsletter .newsletter-content h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.newsletter .newsletter-content p {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 187.5%;
+}
+
+.newsletter .newsletter-content button {
+  border: none;
+  border-radius: 12px;
+  background: #fff;
+  padding: 1em 2.2em;
+  color: #002366;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 1.5 em;
+}
+
+.newsletter img {
+  margin: 0;
+  align-self: flex-end;
+  display: block;
+  position: absolute;
+  right: 30%;
+  width: 250px;
+}
