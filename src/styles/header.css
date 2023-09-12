@@ -1,61 +1,246 @@
 header {
-  /* border: 1px solid red; */
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  margin-top: 2.5rem;
-}
-
-.img img {
-  display: block;
-}
-
-.cta {
+  margin-top: 1.5em;
+  position: relative;
   /* border: 1px solid red; */
-  width: 38%;
-  /* margin-bottom: auto; */
-  /* margin-top: 2rem; */
 }
 
 .cta h2 {
   color: #687690;
-  font-size: 1.125rem;
+  font-size: 0.8rem;
   font-weight: 500;
   margin: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0.4em;
 }
 
 .cta h1 {
   color: #000336;
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 700;
-  line-height: 4.75rem;
+  line-height: 2.4rem;
   margin: 0;
 }
 
 .cta p {
   color: #5a6473;
-  font-size: 1.125rem;
-  line-height: 2rem;
+  font-size: 0.8rem;
+  line-height: 2em;
   font-weight: 400;
   text-transform: capitalize;
-  margin-top: 1rem;
 }
 
 .cta .links {
+  width: 100%;
   display: flex;
-  gap: 3rem;
-  margin: 3.5rem 8.6875rem 2.5rem 0;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: space-between;
+  margin: 1.5rem 8.6875rem 2.5rem 0;
 }
 
 .cta a {
   background: #0f1b4c;
-  border-radius: 12px;
+  border-radius: 8px;
   color: #ededed;
-  padding: 1rem 0rem;
-  display: block;
-  width: 50%;
+  padding: 0.8em 0rem;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
+}
+
+.img img {
+  display: block;
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  opacity: 5%;
+}
+
+img.header-arrow {
+  display: none;
+}
+
+@media (min-width: 370px) {
+  header .main-imgs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
+    top: 45%;
+  }
+
+  .img img {
+    position: unset;
+    opacity: 100%;
+    max-width: 80%;
+    align-self: center;
+  }
+
+  .cta .links {
+    margin-top: 55%;
+    margin-bottom: 0;
+    flex-direction: row;
+    margin-bottom: 1.2em;
+  }
+
+  img.header-arrow {
+    display: unset;
+    max-width: 50%;
+    margin: auto;
+    margin-top: 0;
+    margin-left: 4em;
+  }
+
+  .cta a {
+    width: 100%;
+  }
+}
+
+@media (min-width: 398px) {
+  .cta .links {
+    margin-top: 60%;
+  }
+}
+
+@media (min-width: 440px) {
+  .cta .links {
+    margin-top: 60%;
+  }
+  header .main-imgs {
+    position: unset;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2em;
+  }
+
+  .cta .links {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-bottom: 0;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 800px) {
+  header {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    width: 100%;
+    margin-top: 2.5rem;
+    height: max-content;
+  }
+
+  img.header-arrow {
+    display: none;
+    opacity: 0;
+  }
+
+  header .main-imgs {
+    position: unset;
+    grid-template-columns: repeat(1, auto);
+    margin: 0;
+  }
+
+  .img img {
+    margin: auto;
+    margin-right: 0;
+    min-width: 90%;
+  }
+
+  .cta h2 {
+    font-size: 1rem;
+    margin: 0;
+    margin-bottom: 1em;
+  }
+
+  .cta h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    margin: 0;
+  }
+
+  .cta p {
+    line-height: 2rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+  }
+
+  .cta .links {
+    gap: 3rem;
+    margin: 3.5rem 8.6875rem 2.5rem 0;
+  }
+
+  .cta a {
+    border-radius: 10px;
+    padding: 0.8rem 0rem;
+    display: block;
+    width: 50%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .cta {
+    min-height: 100%;
+  }
+}
+
+@media (min-width: 1130px) {
+  header {
+    margin-top: 2.5rem;
+  }
+
+  .cta h2 {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+  }
+
+  .cta h1 {
+    font-size: 4rem;
+    line-height: 4.75rem;
+    margin: 0;
+  }
+
+  .cta p {
+    line-height: 2rem;
+    font-weight: 400;
+    margin-top: 1rem;
+  }
+
+  .cta .links {
+    gap: 3rem;
+    margin: 3.5rem 8.6875rem 2.5rem 0;
+  }
+
+  .cta a {
+    border-radius: 12px;
+    padding: 1rem 0rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header {
+    grid-template-columns: 1fr 2fr;
+  }
+  img.header-arrow {
+    display: unset;
+    opacity: 100;
+    margin-top: 10em;
+  }
+
+  .cta .links {
+    gap: 3rem;
+    justify-content: flex-start;
+    width: 60%;
+  }
+
+  header .main-imgs {
+    grid-template-columns: repeat(2, auto);
+    /* border: 1px solid; */
+  }
 }

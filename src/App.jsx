@@ -17,7 +17,7 @@ function App() {
     <div>
       <div className="top">
         <Navbar />
-        {/* <Header /> */}
+        <Header />
       </div>
       <main>
         {/* <HowItWorks /> */}
