@@ -1,32 +1,132 @@
 nav {
-  /* border: 1px solid red; */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
-nav img {
-  margin: 0;
-  /* width: 48px; */
-  margin-top: 2.5rem;
+.hidden {
+  display: none;
+  opacity: 0;
 }
 
 nav ul {
-  /* border: 1px solid red; */
-  display: flex;
+  display: none;
+  flex-direction: column;
   list-style-type: none;
   padding: 0;
   margin: 0;
-  margin-top: 2.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #000336;
+  color: #e6f0ff;
+  height: 100vh;
+}
+
+nav img,
+nav .menu-btn {
+  margin-top: 0.5em;
 }
 
 nav ul li {
-  padding: 0.8rem 1.2rem;
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: #4f5361;
+  cursor: pointer;
+  padding: 1em 2em;
 }
 
-nav ul li:last-child {
-  padding-right: 0;
+nav img {
+  min-width: 130px;
+  width: 35%;
+  max-width: 180px;
+  cursor: pointer;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  width: max-content;
+  align-self: flex-end;
+  margin-right: 0;
+  cursor: pointer;
+}
+
+.close-btn {
+  margin: 1em 1em 0 0;
+}
+
+@media (min-width: 500px) {
+  nav img,
+  nav .menu-btn {
+    margin-top: 1em;
+  }
+}
+
+@media (min-width: 550px) {
+  nav img,
+  nav .menu-btn {
+    margin-top: 1.5em;
+  }
+}
+
+@media (min-width: 730px) {
+  .menu-btn {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    background: none;
+    position: unset;
+    color: #000336;
+    height: max-content;
+  }
+
+  nav ul,
+  nav img {
+    margin-top: 1em;
+  }
+  nav ul li {
+    padding: 0.6em 0.6em;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #4f5361;
+  }
+}
+
+@media (min-width: 830px) {
+  nav ul li {
+    font-size: 1rem;
+  }
+
+  nav ul,
+  nav img {
+    margin-top: 2em;
+  }
+
+  nav img {
+    max-width: 200px;
+  }
+}
+
+@media (min-width: 1240px) {
+  nav img {
+    margin: 0;
+    margin-top: 2.5rem;
+  }
+
+  nav ul {
+    margin-top: 2.5rem;
+  }
+
+  nav ul li {
+    padding: 0.8rem 1.2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #4f5361;
+  }
+
+  nav ul li:last-child {
+    padding-right: 0;
+  }
 }

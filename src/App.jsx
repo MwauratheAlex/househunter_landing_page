@@ -17,15 +17,15 @@ function App() {
     <div>
       <div className="top">
         <Navbar />
-        <Header />
+        {/* <Header /> */}
       </div>
       <main>
-        <HowItWorks />
-        <FeaturedProperties />
+        {/* <HowItWorks /> */}
+        {/* <FeaturedProperties /> */}
         {/* <Stats /> */}
-        <Newsletter />
+        {/* <Newsletter /> */}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
