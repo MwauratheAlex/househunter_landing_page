@@ -1,24 +1,40 @@
 .link {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.4em;
   transition: transform 0.3s ease;
 }
 
 .link .arrow-icon {
-  width: 24px;
+  width: 16px;
   transition: width 0.3s ease, height 0.3s ease;
-}
-
-.link:hover .arrow-icon {
-  width: 30px;
 }
 
 .link {
   color: #0689ff;
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   font-weight: 600;
   position: relative;
-  line-height: 3rem;
+  line-height: 100%;
   cursor: pointer;
+}
+
+@media (min-width: 1440px) {
+  .link {
+    gap: 0.5rem;
+  }
+
+  .link .arrow-icon {
+    width: 24px;
+  }
+
+  .link:hover .arrow-icon {
+    width: 30px;
+  }
+
+  .link {
+    font-size: 0.875rem;
+    position: relative;
+    line-height: 3rem;
+  }
 }
