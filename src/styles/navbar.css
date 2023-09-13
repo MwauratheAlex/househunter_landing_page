@@ -10,8 +10,13 @@ nav {
   opacity: 0;
 }
 
+.show {
+  display: flex;
+  opacity: 100;
+}
+
 nav ul {
-  display: none;
+  display: flex;
   flex-direction: column;
   list-style-type: none;
   padding: 0;
@@ -22,6 +27,7 @@ nav ul {
   background: #000336;
   color: #e6f0ff;
   height: 100vh;
+  z-index: 100;
 }
 
 nav img,
@@ -71,6 +77,11 @@ nav img {
 @media (min-width: 730px) {
   .menu-btn {
     display: none;
+  }
+
+  .hidden {
+    display: flex;
+    opacity: 100;
   }
 
   nav ul {

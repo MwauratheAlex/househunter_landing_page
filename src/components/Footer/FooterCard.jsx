@@ -12,7 +12,7 @@ export default function FooterCard({ heading, links, paragraph }) {
       {links && (
         <ul>
           {links.map((link) => (
-            <li>{link}</li>
+            <li key={link}>{link}</li>
           ))}
         </ul>
       )}

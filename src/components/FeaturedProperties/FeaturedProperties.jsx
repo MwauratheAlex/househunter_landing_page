@@ -40,6 +40,7 @@ export default function FeaturedProperties() {
       <div className="card-container">
         {listings.map((listing) => (
           <PropertyCard
+            key={listing.title}
             heading={listing.title}
             imgSrc={listing.imgSrc}
             desc={listing.desc}

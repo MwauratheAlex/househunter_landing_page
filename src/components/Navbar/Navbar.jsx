@@ -4,7 +4,7 @@ import logo from "../../assets/logo.png";
 import { AiOutlineMenuFold, AiOutlineClose } from "react-icons/ai";
 
 export default function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(true);
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
   };
@@ -20,7 +20,7 @@ export default function Navbar() {
         />
       </button>
 
-      <ul>
+      <ul className={menuOpen ? "show" : "hidden"}>
         <button className="menu-btn close-btn" onClick={toggleMenu}>
           <AiOutlineClose
             className="close-icon"
