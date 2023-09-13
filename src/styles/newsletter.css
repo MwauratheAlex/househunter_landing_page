@@ -2,20 +2,25 @@
   display: flex;
   align-items: end;
   position: relative;
+  overflow: hidden;
 }
+
 .newsletter .newsletter-content {
   width: 100%;
-  border-radius: 20px;
-  padding: 8em 4em;
+  border-radius: 10px;
+  padding: 2em 1em;
   background: #063183;
+  margin-top: 2.25em;
+}
 
-  margin-top: 6.25em;
+.newsletter .newsletter-content p {
+  width: 80%;
 }
 
 .newsletter .newsletter-content h1 {
   margin: 0;
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 600;
   line-height: 100%;
@@ -23,21 +28,20 @@
 
 .newsletter .newsletter-content p {
   color: #fff;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 187.5%;
 }
 
 .newsletter .newsletter-content button {
   border: none;
-  border-radius: 12px;
+  border-radius: 8px;
   background: #fff;
-  padding: 1em 2.2em;
+  padding: 0.5em 1.8em;
   color: #002366;
   font-family: Poppins;
   font-size: 1rem;
   font-weight: 500;
   display: inline-block;
-  margin-top: 1.5 em;
 }
 
 .newsletter img {
@@ -45,6 +49,96 @@
   align-self: flex-end;
   display: block;
   position: absolute;
-  right: 30%;
-  width: 250px;
+  right: -5%;
+  width: 100px;
+}
+
+@media (min-width: 400px) {
+  .newsletter img {
+    right: -5%;
+    width: 120px;
+  }
+
+  .newsletter .newsletter-content {
+    padding: 0.5em 2em;
+  }
+}
+
+@media (min-width: 700px) {
+  .newsletter img {
+    right: 20%;
+    width: 160px;
+  }
+
+  .newsletter .newsletter-content {
+    border-radius: 20px;
+    padding: 2.5em 2em;
+    margin-top: 4.25em;
+  }
+
+  .newsletter .newsletter-content h1 {
+    font-size: 2.5rem;
+    width: 80%;
+  }
+
+  .newsletter .newsletter-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .newsletter .newsletter-content {
+    padding: 3em 2.5em;
+  }
+
+  .newsletter .newsletter-content button {
+    border-radius: 12px;
+    padding: 0.8em 2.2em;
+    font-size: 1rem;
+    margin-top: 1.5em;
+  }
+}
+
+@media (min-width: 1440px) {
+  .newsletter .newsletter-content {
+    border-radius: 20px;
+    padding: 7.5em 4em;
+    margin-top: 6.25em;
+  }
+
+  .newsletter .newsletter-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .newsletter .newsletter-content button {
+    border-radius: 12px;
+    padding: 1em 2.2em;
+    font-size: 1rem;
+    margin-top: 1.5em;
+  }
+
+  .newsletter img {
+    right: 30%;
+    width: 250px;
+  }
+}
+
+@media (min-width: 2040px) {
+  .newsletter .newsletter-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .newsletter .newsletter-content p {
+    font-size: 1.5rem;
+  }
+
+  .newsletter .newsletter-content button {
+    padding: 1em 2.8em;
+    color: #002366;
+    font-size: 1.5rem;
+  }
+
+  .newsletter img {
+    width: 300px;
+  }
 }
