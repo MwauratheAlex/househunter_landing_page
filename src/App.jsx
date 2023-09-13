@@ -23,7 +23,7 @@ function App() {
         {/* <Stats /> */}
         <Newsletter />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

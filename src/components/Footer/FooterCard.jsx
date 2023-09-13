@@ -20,13 +20,13 @@ export default function FooterCard({ heading, links, paragraph }) {
       {paragraph && (
         <div className="socials">
           <a>
-            <TiSocialTwitter size={30} fill="#000336" />
+            <TiSocialTwitter size={24} fill="#000336ce" />
           </a>
           <a>
-            <TiSocialInstagram size={30} fill="#000336" />
+            <TiSocialInstagram size={24} fill="#000336ce" />
           </a>
           <a>
-            <TiSocialLinkedin size={30} fill="#000336" />
+            <TiSocialLinkedin size={24} fill="#000336ce" />
           </a>
         </div>
       )}

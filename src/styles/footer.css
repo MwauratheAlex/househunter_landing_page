@@ -1,12 +1,15 @@
 .footer {
-  margin-top: 3.5em;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  margin-top: 1.5em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
   border-top: 1px solid #10101012;
 }
 
 .links {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
   justify-content: space-between;
 }
 
@@ -14,9 +17,9 @@
   margin: 0;
   color: #1c1c1dc5;
   font-family: Lato;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: normal;
-  margin-bottom: 1.6em;
+  margin-bottom: 0.5em;
 }
 
 .links ul {
@@ -28,28 +31,50 @@
 .links ul li,
 .links p {
   color: #7a7a7e;
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: normal;
 }
 
 .footnote {
   display: flex;
   justify-content: space-between;
-  margin-top: 5em;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 1.5em;
 }
 
 .footnote h1 {
   margin: 0;
   color: #101010e3;
+  font-size: 1rem;
 }
 
 .footnote p {
   color: #c2c2c2;
-  font-size: 0.875rem;
+  font-size: 0.8rem;
 }
 
 .socials {
   display: flex;
   gap: 2em;
-  margin-top: 2em;
+}
+
+@media (min-width: 500px) {
+  .footnote h1 {
+    font-size: 1.2rem;
+  }
+
+  .footnote p {
+    font-size: 1rem;
+  }
+
+  .links ul li,
+  .links p {
+    font-size: 1rem;
+  }
+
+  .footer {
+    margin-top: 5%;
+    padding-top: 5%;
+  }
 }
