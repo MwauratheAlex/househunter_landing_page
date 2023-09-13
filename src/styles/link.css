@@ -3,6 +3,7 @@
   align-items: center;
   gap: 0.4em;
   transition: transform 0.3s ease;
+  text-decoration: none;
 }
 
 .link .arrow-icon {

@@ -30,7 +30,7 @@ function App() {
     <div>
       <div className="top" id="home">
         <Navbar onClick={handleNavClick} />
-        <Header />
+        <Header onClick={handleNavClick} />
       </div>
       <main>
         <HowItWorks />

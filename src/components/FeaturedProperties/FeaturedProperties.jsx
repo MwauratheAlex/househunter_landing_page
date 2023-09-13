@@ -35,7 +35,11 @@ export default function FeaturedProperties() {
       <h1>Featured Properties</h1>
       <div className="featured-cta">
         <p>Everything you need to know when you're looking</p>
-        <Link text="View All Properties" />
+        <Link
+          text="View All Properties"
+          dest={"https://househunter.mbumwa.com"}
+          target={"_"}
+        />
       </div>
       <div className="card-container">
         {listings.map((listing) => (

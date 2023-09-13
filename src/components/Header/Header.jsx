@@ -4,10 +4,10 @@ import CTA from "./CTA";
 import house from "../../assets/house_illustration.svg";
 import arrow from "../../assets/arrow.svg";
 
-export default function Header() {
+export default function Header({ onClick }) {
   return (
     <header className="container">
-      <CTA />
+      <CTA onClick={onClick} />
       <div className="main-imgs">
         <img
           className="header-arrow"
