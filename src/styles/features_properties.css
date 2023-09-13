@@ -1,12 +1,12 @@
 .featured {
-  padding-top: 6.875rem;
-  padding-bottom: 6.875rem;
+  padding-top: 2em;
+  padding-bottom: 2em;
   background: #f5fafe;
 }
 
 .featured h1 {
   color: #000339;
-  font-size: 2.1875rem;
+  font-size: 1.5rem;
   font-weight: 600;
   line-height: 100%;
   margin: 0;
@@ -15,13 +15,14 @@
 
 .featured-cta {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1.5em;
 }
 
 .featured p {
   color: #5a6473;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-style: normal;
   font-weight: 400;
   line-height: 187.5%;
@@ -29,24 +30,23 @@
 }
 
 .featured-cta a {
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 600;
   line-height: normal;
 }
 
 .featured-cta .link .arrow-icon {
-  width: 30px;
+  width: 25px;
 }
 
 .featured-cta .link:hover .arrow-icon {
-  width: 35px;
+  width: 30px;
 }
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
-  margin-top: 4.375rem;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
 }
 
 .property-card {
@@ -74,8 +74,9 @@
 }
 
 .content p {
+  min-width: max-content;
   color: #a3a6ab;
-  font-size: 0.875rem;
+  font-size: 0.6rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -85,19 +86,128 @@
   display: flex;
   justify-content: left;
   align-items: center;
-  gap: 3rem;
-  margin-top: 1.3125rem;
+  gap: 1rem;
+  margin-top: 0.3em;
 }
 
 .content .amenities .cont {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 0.5rem;
+  gap: 10%;
 }
 
 .content .amenities .cont p {
   color: #444;
-  font-size: 0.875rem;
+  font-size: 0.6rem;
   line-height: 100%;
+}
+
+@media (min-width: 400px) {
+  .content p {
+    font-size: 0.8rem;
+  }
+  .content .amenities .cont p {
+    font-size: 0.8rem;
+  }
+
+  .content h1 {
+    font-size: 1.5rem;
+  }
+
+  .featured h1 {
+    font-size: 1.5rem;
+  }
+
+  .featured p {
+    font-size: 1rem;
+  }
+
+  .featured-cta a {
+    font-size: 1.25rem;
+  }
+
+  .card-container {
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .featured {
+    padding-top: 6.875rem;
+    padding-bottom: 6.875rem;
+  }
+
+  .featured h1 {
+    font-size: 2.1875rem;
+    margin-bottom: 1rem;
+  }
+
+  .featured-cta {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .featured p {
+    font-size: 1rem;
+    line-height: 187.5%;
+  }
+
+  .featured-cta {
+    flex-direction: row;
+  }
+
+  .featured-cta a {
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  .featured-cta .link .arrow-icon {
+    width: 30px;
+  }
+
+  .featured-cta .link:hover .arrow-icon {
+    width: 35px;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3%;
+    margin-top: 4.375rem;
+  }
+
+  .property-card {
+    grid-column: span 1;
+    border-radius: 0.5rem;
+  }
+
+  .property-card .content {
+    padding: 1rem 1.25rem;
+    padding-bottom: 2rem;
+  }
+
+  .content h1 {
+    font-size: 1.25rem;
+  }
+
+  .content p {
+    font-size: 0.875rem;
+  }
+
+  .content .amenities {
+    justify-content: left;
+    align-items: center;
+    gap: 5%;
+    margin-top: 1.3125rem;
+  }
+
+  .content .amenities .cont {
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .content .amenities .cont p {
+    font-size: 0.875rem;
+  }
 }
