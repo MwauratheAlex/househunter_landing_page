@@ -19,9 +19,9 @@ function App() {
       </div>
       <main>
         <HowItWorks />
-        {/* <FeaturedProperties /> */}
+        <FeaturedProperties />
         {/* <Stats /> */}
-        {/* <Newsletter /> */}
+        <Newsletter />
       </main>
       {/* <Footer /> */}
     </div>
