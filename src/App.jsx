@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./styles/App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Header from "./components/Header/Header";
@@ -9,12 +9,27 @@ import Footer from "./components/Footer/Footer";
 import FeaturedProperties from "./components/FeaturedProperties/FeaturedProperties";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [scrollTo, setScrollTo] = useState("");
+
+  function scrollToTargetSection(section) {
+    const targetSection = document.getElementById(section);
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
+  useEffect(() => {
+    scrollToTargetSection(scrollTo);
+  }, [scrollTo]);
+
+  function handleNavClick(section) {
+    setScrollTo(section);
+  }
 
   return (
     <div>
-      <div className="top">
-        <Navbar />
+      <div className="top" id="home">
+        <Navbar onClick={handleNavClick} />
         <Header />
       </div>
       <main>

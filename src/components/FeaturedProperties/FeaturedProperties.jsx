@@ -31,7 +31,7 @@ export default function FeaturedProperties() {
   ];
 
   return (
-    <section className="featured container">
+    <section className="featured container" id="featured">
       <h1>Featured Properties</h1>
       <div className="featured-cta">
         <p>Everything you need to know when you're looking</p>

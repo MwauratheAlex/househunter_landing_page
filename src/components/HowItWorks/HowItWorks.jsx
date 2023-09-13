@@ -7,7 +7,7 @@ import sellHseIcon from "../../assets/icon3.svg";
 
 export default function HowItWorks() {
   return (
-    <div className="container">
+    <div className="container" id="how_it_works">
       <section className="howItWorks ">
         <h2>How it works?</h2>
         <p>

@@ -5,7 +5,7 @@ import "../../styles/footer.css";
 export default function Footer() {
   return (
     <footer className="footer container">
-      <div className="links">
+      <div className="links" id="contact">
         <FooterCard
           heading={"Product"}
           links={["Listings", "Property", "Agent", "Block"]}

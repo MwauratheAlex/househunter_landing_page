@@ -4,7 +4,7 @@ import phone from "../../assets/phone.svg";
 
 export default function Newsletter() {
   return (
-    <section className="newsletter container">
+    <section className="newsletter container" id="newsletter">
       <div className="newsletter-content">
         <h1>Subscribe to our Newsletter!</h1>
         <p>Subscribe to our newsletter and stay updated.</p>

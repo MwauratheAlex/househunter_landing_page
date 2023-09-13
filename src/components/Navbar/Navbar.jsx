@@ -1,13 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../../styles/navbar.css";
 import logo from "../../assets/logo.png";
 import { AiOutlineMenuFold, AiOutlineClose } from "react-icons/ai";
 
-export default function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(true);
+export default function Navbar({ onClick }) {
+  const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
   };
+
   return (
     <nav className="container">
       <img src={logo} alt="house hunter logo" />
@@ -28,11 +29,11 @@ export default function Navbar() {
             size={26}
           />
         </button>
-        <li>Home</li>
-        <li>How it works</li>
-        <li>Featured Properties</li>
-        <li>Newsletter</li>
-        <li>Contact Us</li>
+        <li onClick={() => onClick("home")}>Home</li>
+        <li onClick={() => onClick("how_it_works")}>How it works</li>
+        <li onClick={() => onClick("featured")}>Featured Properties</li>
+        <li onClick={() => onClick("newsletter")}>Newsletter</li>
+        <li onClick={() => onClick("contact")}>Contact Us</li>
       </ul>
     </nav>
   );
